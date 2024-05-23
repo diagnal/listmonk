@@ -6,7 +6,7 @@ version: "3.7"
 
 x-app-defaults: &app-defaults
   restart: unless-stopped
-  image: aravinddg/diagnal:listmonk
+  image: aravinddg/diagnal:latest
   ports:
     - "9000:9000"
   networks:
