@@ -7,13 +7,6 @@
           <span v-if="!isNaN(lists.total)">({{ lists.total }})</span>
         </h1>
       </div>
-      <div class="column has-text-right">
-        <b-field expanded>
-          <b-button expanded type="is-primary" icon-left="plus" class="btn-new" @click="showNewForm" data-cy="btn-new">
-            {{ $t('globals.buttons.new') }}
-          </b-button>
-        </b-field>
-      </div>
     </header>
 
     <b-table :data="lists.results" :loading="loading.lists" hoverable default-sort="createdAt" paginated
