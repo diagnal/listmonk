@@ -69,7 +69,7 @@
 
                 <b-field :label="$t('campaigns.fromAddress')" label-position="on-border">
                   <b-input :maxlength="200" v-model="form.fromEmail" name="from_email" :disabled="true"
-                    :placeholder="$t('campaigns.fromAddressPlaceholder')" required readonly />
+                    :placeholder="$t('campaigns.fromAddressPlaceholder')" required :readonly="true" />
                 </b-field>
 
                 <list-selector v-model="form.lists" :selected="form.lists" :all="lists.results" :disabled="!canEdit"
@@ -88,7 +88,7 @@
 
                 <b-field :label="$tc('globals.terms.messenger')" label-position="on-border">
                   <b-select :placeholder="$tc('globals.terms.messenger')" v-model="form.messenger" name="messenger"
-                    :disabled="true" required readonly>
+                    :disabled="true" required :readonly="true" >
                     <option v-for="m in messengers" :value="m" :key="m">
                       {{ m }}
                     </option>

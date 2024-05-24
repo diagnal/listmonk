@@ -5,9 +5,9 @@
 
     <b-menu-item :expanded="activeGroup.lists" :active="activeGroup.lists" data-cy="lists"
       @update:active="(state) => toggleGroup('lists', state)" icon="format-list-bulleted-square"
-      :label="$t('globals.terms.lists')">
+      :label="Segments">
       <b-menu-item :to="{ name: 'lists' }" tag="router-link" :active="activeItem.lists" data-cy="all-lists"
-        icon="format-list-bulleted-square" :label="$t('menu.allLists')" />
+        icon="format-list-bulleted-square" :label="All Segments" />
       <b-menu-item :to="{ name: 'forms' }" tag="router-link" :active="activeItem.forms" class="forms"
         icon="newspaper-variant-outline" :label="$t('menu.forms')" />
     </b-menu-item><!-- lists -->
