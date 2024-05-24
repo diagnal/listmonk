@@ -69,7 +69,7 @@
 
                 <b-field :label="$t('campaigns.fromAddress')" label-position="on-border">
                   <b-input :maxlength="200" v-model="form.fromEmail" name="from_email" :disabled="true"
-                    :placeholder="$t('campaigns.fromAddressPlaceholder')" required readonly/>
+                    :placeholder="$t('campaigns.fromAddressPlaceholder')" required readonly />
                 </b-field>
 
                 <list-selector v-model="form.lists" :selected="form.lists" :all="lists.results" :disabled="!canEdit"
