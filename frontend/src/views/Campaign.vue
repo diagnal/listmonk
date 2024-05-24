@@ -88,7 +88,7 @@
 
                 <b-field :label="$tc('globals.terms.messenger')" label-position="on-border">
                   <b-select :placeholder="$tc('globals.terms.messenger')" v-model="form.messenger" name="messenger"
-                    :disabled="true" required :readonly="true" >
+                    :disabled="true" required :readonly="true">
                     <option v-for="m in messengers" :value="m" :key="m">
                       {{ m }}
                     </option>
